@@ -34,7 +34,7 @@ Schritte
 
 1. Importieren der Libraries: Wir beginnen mit dem Importieren der Python-Bibliotheken, die für die Datenanalyse und Visualisierung benötigt werden.
 
-2. Daten einlesen:Der Datensatz wird aus einer Datei namens 'College_Data' eingelesen und in einen DataFrame 'df' geladen.
+2. Daten einlesen: Der Datensatz wird aus einer Datei namens 'College_Data' eingelesen und in einen DataFrame 'df' geladen.
 
 3. Datenüberblick: Wir werfen einen Blick auf die ersten Zeilen des DataFrames und verwenden die Funktionen 'info()' und 'describe()', um grundlegende Informationen über die Daten zu erhalten.
 
