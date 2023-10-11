@@ -42,5 +42,15 @@ Wir verwenden einen DataFrame mit 770 Beobachtungen und den folgenden 18 Variabl
 
 ### Ergebnis
 
-Die Auswertung des K-Means-Clustering-Algorithmus zeigt, dass die Zuordnung der Universitäten zu den Clustern relativ gut funktioniert, obwohl der Algorithmus nur die reinen Eigenschaften der Universitäten verwendet. Die Ergebnisse könnten in realen Anwendungen weiter untersucht werden, um fundierte Schlussfolgerungen zu ziehen.
+Die Confusion Matrix zeigt:
+* Für die Klasse "0" (öffentliche Universitäten) wurden 138 Universitäten korrekt zugeordnet, während 74 fälschlicherweise der Klasse "1" zugeordnet wurden.
+* Für die Klasse "1" (private Universitäten) wurden 34 Universitäten korrekt zugeordnet, während 531 fälschlicherweise der Klasse "0" zugeordnet wurden.
+
+Der Classification Report zeigt:
+* Die Precision für Klasse "0" beträgt 0,21, während die Recall 0,65 beträgt. Der F1-Score liegt bei 0,31.
+* Die Precision für Klasse "1" beträgt 0,31, während der Recall bei 0,06 liegt. Der F1-Score liegt bei 0,10.
+Die Gesamtgenauigkeit des Modells beträgt 0,22.
+
+Betrachtet man die Ergebnisse, zeigt sich, dass das K-Means-Clustering die Universitäten anhand der verfügbaren Merkmale in zwei Gruppen unterteilt hat. Die Genauigkeit ist zwar nicht sehr hoch, was angesichts der reinen Verwendung von Merkmalsdaten für das Clustering nicht überraschend ist. Dennoch ist es bemerkenswert, wie gut der Algorithmus ohne Kenntnis der tatsächlichen Zuordnung funktioniert hat.
+Dieses Beispiel verdeutlicht, wie gut K-Means für die Gruppierung von Daten geeignet ist, insbesondere wenn keine vorherige Kenntnis über die tatsächlichen Zuordnungen vorliegt.
 
